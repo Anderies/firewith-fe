@@ -10,7 +10,7 @@ import * as Hammer from 'hammerjs';
 import { FirewithContactComponent } from './firewith-contact/firewith-contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatButtonModule} from '@angular/material/button';
+import { MatButtonModule } from '@angular/material/button';
 
 export class MyHammerConfig extends HammerGestureConfig {
   overrides = <any>{
