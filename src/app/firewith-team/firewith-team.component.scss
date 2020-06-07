@@ -1,97 +1,81 @@
-
-
-.slider-button{
+.slider-button {
     display: flex;
     width: 100%;
     justify-content: space-around;
 
-    .group-text{
+    .group-text {
         margin-top: 10%;
         text-align: center;
     }
-    .slider{
+    .slider {
         width: 100%;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         margin-top: 3%;
         animation: fadein 2s;
-        .img {
-            width: 250px;
-            height: 250px;
-            border-radius: 50%;
-            background-color: gray;
+        .group-img {
+            width: 25%;
+            display: flex;
+            flex-direction: column;
+            .img {
+                width: 250px;
+                height: 250px;
+                border-radius: 50%;
+                background-color: gray;
+                align-self: center;
+                object-fit: cover;
+            }
         }
-        
-        
     }
-
-    .slider-2{
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        margin-top: 3%;
-        animation: fadein 2s;
-        .img {
-            width: 250px;
-            height: 250px;
-            border-radius: 50%;
-            background-color: red;
-        }
-        
-    }
-
-    .slider-3{
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        margin-top: 3%;
-        animation: fadein 2s;
-        .img {
-            width: 250px;
-            height: 250px;
-            border-radius: 50%;
-            background-color: blue;
-        }
-        
-    }
-
 }
 
 @keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
-
-
 @-webkit-keyframes slide {
-    100% { left: 0; }
+    100% {
+        left: 0;
+    }
 }
 
 @keyframes slide {
-    100% { left: 0; }
+    100% {
+        left: 0;
+    }
 }
 
-.arrow-button{
-    background: transparent;
-    border: transparent;
-    font-size: 90px;
+.box-button {
+    width: 5%;
+    display: flex;
+
+    .arrow-button {
+        background: transparent;
+        border: transparent;
+    }
+
+    .arrow-img {
+        width: 32px;
+    }
 }
 
-button:active{
+button:active {
     outline: 0;
     border: transparent;
 }
 
-button:focus{
+button:focus {
     outline: 0;
     border: transparent;
 }
 
-.firewith-team{
+.firewith-team {
     width: 90%;
     margin-right: 5%;
     margin-left: 5%;
@@ -110,5 +94,56 @@ button:focus{
         font-family: poppins-light;
         font-weight: 500;
         font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 1440px) {
+    .slider-button {
+        .slider {
+            .group-img {
+                .img {
+                    width: 200px;
+                    height: 200px;
+                }
+            }
+        }
+
+        .group-text {
+            margin-top: 10%;
+            text-align: center;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .slider-button {
+        .slider {
+            .group-img {
+                .img {
+                    width: 65px;
+                    height: 65px;
+                }
+            }
+
+            .group-text {
+                margin-top: 15%;
+            }
+        }
+
+        .txt-name {
+            font-size: 12px;
+            white-space: nowrap;
+            font-family: poppins-semibold;
+        }
+
+        .txt-job {
+            font-size: 10px;
+            white-space: nowrap;
+            white-space: poppins-light;
+        }
+    }
+
+    .box-button {
+        display: none;
     }
 }

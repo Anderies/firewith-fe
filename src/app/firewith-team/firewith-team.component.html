@@ -1,110 +1,61 @@
-<div class="firewith-team">
+<div class="firewith-team"  (swipeleft)="onSwipeRight($event,1)" (swiperight)="onSwipeRight($event,1)"> 
     <h1 class="txt-title">Firewith Team</h1>
     <p class="txt-description">A team that believes effort will not betray results</p>
     <div class="slider-button">
-        <button class="arrow-button" (click)="slide(-1)">
-            < </button>
+        <div class="slider" *ngIf="slides == 0 ">
 
-                <div class="slider-3" *ngIf="slides == -1 ">
-
-                    <div class="group-img">
-                        <div class="img">
-                        </div>
-                        <div class="group-text">
-                            <h3>Bayu Agung Gumelar</h3>
-                            <h5>Full Stack Developer</h5>
-                            <hr>
-                        </div>
-
-                    </div>
-                    <div class="group-img">
-                        <div class="img">
-                        </div>
-                        <div class="group-text">
-                            <h3>Hendra Brata</h3>
-                            <h5>IOT Expert Development</h5>
-                            <hr>
-                        </div>
-
-                    </div>
-                    <div class="group-img">
-                        <div class="img">
-                        </div>
-                        <div class="group-text">
-                            <h3>Ikbal Tawakal</h3>
-                            <h5>UI / UX Designer</h5>
-                            <hr>
-                        </div>
-
-                    </div>
-
+            <div class="group-img">
+                <img class="img" src="../../assets/images/ikbal-tawakal.jpg">
+                <div class="group-text">
+                    <h3 class="txt-name">Ikbal Tawakal</h3>
+                    <h5 class="txt-job">UI / UX Designer</h5>
+                    <hr>
                 </div>
-                <div class="slider" *ngIf="slides == 0 ">
 
-                    <div class="group-img">
-                        <div class="img">
-                        </div>
-                        <div class="group-text">
-                            <h3>Dean Louis</h3>
-                            <h5>Solution Architect</h5>
-                            <hr>
-                        </div>
-
-                    </div>
-                    <div class="group-img">
-                        <div class="img">
-                        </div>
-                        <div class="group-text">
-                            <h3>Anderies</h3>
-                            <h5>Lead Technical Development</h5>
-                            <hr>
-                        </div>
-
-                    </div>
-                    <div class="group-img">
-                        <div class="img">
-                        </div>
-                        <div class="group-text">
-                            <h3>Anes Yohanes</h3>
-                            <h5>Sales & Marketing</h5>
-                            <hr>
-                        </div>
-
-                    </div>
-
-
+            </div>
+            <div class="group-img">
+                <img class="img" src="../../assets/images/anderies.png">
+                <div class="group-text">
+                    <h3 class="txt-name">Anderies</h3>
+                    <h5 class="txt-job">Development</h5>
+                    <hr>
                 </div>
-                <div class="slider-2" *ngIf="slides == 1">
-                    <div class="group-img">
-                        <div class="img">
-                        </div>
-                        <div class="group-text">
-                            <h3>Rizal Hamdan</h3>
-                            <h5>Full Stack Javascript Developer</h5>
-                        </div>
 
-                    </div>
-                    <div class="group-img">
-                        <div class="img">
-                        </div>
-                        <div class="group-text">
-                            <h3>Zaenal Arsy</h3>
-                            <h5>Mobile Development</h5>
-                        </div>
+            </div>
 
-                    </div>
-                    <div class="group-img">
-                        <div class="img">
-                        </div>
-                        <div class="group-text">
-                            <h3>Muhammad Ardiyansyah</h3>
-                            <h5>Business Development</h5>
-                        </div>
-
-                    </div>
-
+            <div class="group-img">
+                <img class="img" src="../../assets/images/anes-yohanes.jpg">
+                <div class="group-text">
+                    <h3 class="txt-name">Anes Yohanes</h3>
+                    <h5 class="txt-job">Sales & Marketing</h5>
+                    <hr>
                 </div>
-                <button class="arrow-button" (click)="slide(1)"> > </button>
+
+            </div>
+
+        </div>
+        <div class="slider" *ngIf="slides == 1">
+            <div class="group-img">
+                <div class="img">
+                </div>
+                <div class="group-text">
+                    <h3 class="txt-name">Zaenal Arsy</h3>
+                    <h5 class="txt-job">Mobile Development</h5>
+                </div>
+
+            </div>
+            <div class="group-img">
+                <img class="img" src="../../assets/images/zaenal.jpg">
+                <div class="group-text">
+                    <h3 class="txt-name">Zaenal Arsy</h3>
+                    <h5 class="txt-job">Mobile Development</h5>
+                </div>
+            </div>
+        </div>
+        <div class="box-button">
+            <button class="arrow-button" (click)="slide(1)"> <img class="arrow-img"
+                    src="../../assets/images/forward-icon.png"> </button>
+        </div>
     </div>
 
 
