@@ -1,0 +1,61 @@
+.firewith-contact {
+    width: 90%;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    padding-top: 3%;
+    .txt-title {
+        font-family: poppins-med;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 28px;
+        text-align: left;
+        letter-spacing: 0.09;
+    }
+    .txt-description {
+        width: 50%;
+        font-family: poppins-light;
+        font-weight: 500;
+        font-size: 16px;
+    }
+
+    .form-contact {
+        width: 50%;
+        .txt-label {
+            font-family: poppins-light;
+            margin-top: 3%;
+            margin-bottom: 2px;
+        }
+    }
+}
+@media only screen and (max-width: 600px) {
+    .firewith-contact {
+        width: 93%;
+        margin-right: 3.5%;
+        margin-left: 3.5%;
+        padding-top: 3%;
+        .txt-title {
+            font-family: poppins-med;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 22px;
+            text-align: left;
+            letter-spacing: 0.09;
+        }
+        .txt-description {
+            width: 95%;
+            font-family: poppins-light;
+            font-weight: 500;
+            font-size: 11px;
+        }
+
+        .form-contact {
+            width: 100%;
+            .txt-label {
+                font-family: poppins-light;
+                margin-top: 3%;
+                margin-bottom: 2px;
+            }
+        }
+    }
+}

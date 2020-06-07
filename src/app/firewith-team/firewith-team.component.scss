@@ -146,4 +146,26 @@ button:focus {
     .box-button {
         display: none;
     }
+
+    .firewith-team {
+        width: 93%;
+        margin-right: 3.5%;
+        margin-left: 3.5%;
+        margin-bottom: 5%;
+        padding-top: 3%;
+        .txt-title {
+            font-family: poppins-med;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 22px;
+            text-align: left;
+            letter-spacing: 0.09;
+        }
+        .txt-description {
+            width: 95%;
+            font-family: poppins-light;
+            font-weight: 500;
+            font-size: 11px;
+        }
+    }
 }

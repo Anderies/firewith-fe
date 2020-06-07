@@ -7,6 +7,10 @@ import { BrandComponent } from './homepage/brand/brand.component';
 import { ServicesComponent } from './services/services.component';
 import { FirewithTeamComponent } from './firewith-team/firewith-team.component';
 import * as Hammer from 'hammerjs';
+import { FirewithContactComponent } from './firewith-contact/firewith-contact.component';
+import { FooterComponent } from './footer/footer.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatButtonModule} from '@angular/material/button';
 
 export class MyHammerConfig extends HammerGestureConfig {
   overrides = <any>{
@@ -19,12 +23,16 @@ export class MyHammerConfig extends HammerGestureConfig {
     AppComponent,
     BrandComponent,
     ServicesComponent,
-    FirewithTeamComponent
+    FirewithTeamComponent,
+    FirewithContactComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HammerModule
+    HammerModule,
+    BrowserAnimationsModule,
+    MatButtonModule
   ],
   providers: [
     { provide: HAMMER_GESTURE_CONFIG, useClass: MyHammerConfig }
